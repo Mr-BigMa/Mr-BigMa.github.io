@@ -20,6 +20,19 @@ var _hmt = _hmt || [];
 		<h1>经</h1>
 		<h1>爱</h1>
 		<h1>过</h1>
+		<div><p id = "teol"/></div>
 	</div>
 </body>
+<script>
+	function randomRange(min, max) { // min最小值，max最大值
+		return Math.floor(Math.random() * (max - min)) + min;
+	}
+	window.onload = function(){
+		var textArr = ["你也曾深夜久久无法入眠吧", "你也曾后悔过吧", "不知道还能说些什么", "我还是设想过如果又破镜重圆会怎样", "我有时候真的恨你"];
+		console.log("onload");
+		var str = textArr[randomRange(0, 5)];
+		console.log(str);
+		document.getElementById("teol").innerHTML = str;
+	}
+</script>
 </html>
